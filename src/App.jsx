@@ -5,6 +5,7 @@ import ResultsDashboard from "./components/ResultsDashboard";
 import Toast from "./components/StatusBar";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
+
 const STEPS = [
   { id: 1, label: "Upload", sub: "Your dataset" },
   { id: 2, label: "Configure", sub: "Analysis type" },
