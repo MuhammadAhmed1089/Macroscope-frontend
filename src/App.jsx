@@ -5,7 +5,7 @@ import ResultsDashboard from "./components/ResultsDashboard";
 import Toast from "./components/StatusBar";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
-
+const DOCS_URL = API.replace("/api", "") + "/docs";
 const STEPS = [
   { id: 1, label: "Upload", sub: "Your dataset" },
   { id: 2, label: "Configure", sub: "Analysis type" },
@@ -220,7 +220,7 @@ export default function App() {
                 </button>
               )}
               <a
-                href="http://localhost:8000/docs"
+                href={DOCS_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="nav-pill"
@@ -269,7 +269,7 @@ export default function App() {
                 <span>⚡</span> Start Analysis
               </button>
               <a
-                href="http://localhost:8000/docs"
+                href={DOCS_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="btn-ghost"
